@@ -1,5 +1,11 @@
 from src.datascience import  logger
+from src.datascience.entity.config_entity import ModelTrainerConfig
 from src.datascience.pipeline.data_ingestion import  DataIngestionTrainingPipeline
+from src.datascience.pipeline.data_transformation import DataTransformationTrainingPipeline
+from src.datascience.pipeline.data_validation import DataValidationTrainingPipeline
+from src.datascience.pipeline.model_evaluation import ModelEvaluationTrainingPipeline
+from src.datascience.pipeline.model_trainer import ModelTrainerTrainingPipeline
+
 STAGE_NAME="Data Ingestion Stage"
 
 
@@ -12,3 +18,54 @@ if __name__ == "__main__":
         logger.info(f">>>>> Stage {STAGE_NAME} completed <<<<")
     except Exception as e:
         logger.error(e)
+
+
+    STAGE_NAME = "Data Validaton Stage"
+
+
+    try:
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        obj = DataValidationTrainingPipeline()
+        obj.initiate_data_validation()
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+    except Exception as e:
+        logger.exception(e)
+        raise e
+
+    STAGE_NAME = "Data Transformation stage"
+
+    try:
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        data_ingestion  = DataTransformationTrainingPipeline()
+        data_ingestion.initiate_data_transformation()
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+    except Exception as e:
+        logger.exception(e)
+        raise e
+
+
+    STAGE_NAME = "Model Trainer Stage"
+
+
+
+    try:
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<")
+        data_ingestion  = ModelTrainerTrainingPipeline()
+        data_ingestion.initiate_model_training()
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+    except Exception as e:
+        logger.exception(e)
+        raise e
+
+
+    STAGE_NAME = "Model Evaluation Stage"
+
+    try:
+
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<")
+        data_ingestion = ModelEvaluationTrainingPipeline()
+        data_ingestion.initiate_model_evaluation()
+        logger.info(f">>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+    except Exception as e:
+        logger.exception(e)
+        raise e

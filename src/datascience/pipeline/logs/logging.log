@@ -1,0 +1,80 @@
+[2026-05-20 06:32:53,205: INFO: data_validation] >>>>>> stage Data Validation stage started <<<<<<]
+[2026-05-20 06:32:53,205: ERROR: data_validation] [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\anice\PythonProject\src\datascience\pipeline\data_validation.py", line 21, in <module>
+    obj.initiate_data_validation()
+  File "C:\Users\anice\PythonProject\src\datascience\pipeline\data_validation.py", line 12, in initiate_data_validation
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\src\datascience\config\configuration.py", line 8, in __init__
+    self.config =read_yaml(config_filepath)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\.venv\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\src\datascience\utils\common.py", line 26, in read_yaml
+    raise e
+  File "C:\Users\anice\PythonProject\src\datascience\utils\common.py", line 19, in read_yaml
+    with open(path_to_yaml, "r") as yaml_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2026-05-20 06:33:46,296: INFO: data_validation] >>>>>> stage Data Validation stage started <<<<<<]
+[2026-05-20 06:33:46,297: ERROR: data_validation] [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\anice\PythonProject\src\datascience\pipeline\data_validation.py", line 21, in <module>
+    obj.initiate_data_validation()
+  File "C:\Users\anice\PythonProject\src\datascience\pipeline\data_validation.py", line 12, in initiate_data_validation
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\src\datascience\config\configuration.py", line 8, in __init__
+    self.config =read_yaml(config_filepath)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\.venv\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\src\datascience\utils\common.py", line 26, in read_yaml
+    raise e
+  File "C:\Users\anice\PythonProject\src\datascience\utils\common.py", line 19, in read_yaml
+    with open(path_to_yaml, "r") as yaml_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2026-05-20 06:35:48,625: INFO: data_validation] >>>>>> stage Data Validation stage started <<<<<<]
+[2026-05-20 06:35:48,625: ERROR: data_validation] [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\anice\PythonProject\src\datascience\pipeline\data_validation.py", line 21, in <module>
+    obj.initiate_data_validation()
+  File "C:\Users\anice\PythonProject\src\datascience\pipeline\data_validation.py", line 12, in initiate_data_validation
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\src\datascience\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\.venv\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\src\datascience\utils\common.py", line 26, in read_yaml
+    raise e
+  File "C:\Users\anice\PythonProject\src\datascience\utils\common.py", line 19, in read_yaml
+    with open(path_to_yaml, "r") as yaml_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
+[2026-05-20 06:35:50,135: INFO: data_validation] >>>>>> stage Data Validation stage started <<<<<<]
+[2026-05-20 06:35:50,136: ERROR: data_validation] [Errno 2] No such file or directory: 'config\\config.yaml']
+Traceback (most recent call last):
+  File "C:\Users\anice\PythonProject\src\datascience\pipeline\data_validation.py", line 21, in <module>
+    obj.initiate_data_validation()
+  File "C:\Users\anice\PythonProject\src\datascience\pipeline\data_validation.py", line 12, in initiate_data_validation
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\src\datascience\config\configuration.py", line 13, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\.venv\Lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anice\PythonProject\src\datascience\utils\common.py", line 26, in read_yaml
+    raise e
+  File "C:\Users\anice\PythonProject\src\datascience\utils\common.py", line 19, in read_yaml
+    with open(path_to_yaml, "r") as yaml_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config.yaml'
